@@ -61,7 +61,7 @@ await new Command()
 			}
 		}
 		if (!isExists || !isBranchCorrect) {
-			await $`git clone https://github.com/microsoft/onnxruntime --recursive --single-branch --depth 1 --branch rel-${options.upstreamVersion}`;
+			await $`git clone https://github.com/inigolz/onnxruntime --recursive --single-branch --depth 1 --branch rel-${options.upstreamVersion}`;
 		}
 
 		$.cd(onnxruntimeRoot);
